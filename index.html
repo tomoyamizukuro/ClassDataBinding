@@ -11,7 +11,8 @@
     <p>
       {{ message }}
     </p>
-    <button v-on:click="clickHandler('vue.js!')">
+    <!-- <button v-on:click="clickHandler($event,'vue.js!')"> -->
+    <button v-on:click.once="clickHandler">
       Click2
     </button>
     <p v-show="toggle">
