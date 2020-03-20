@@ -9,6 +9,9 @@
 <body>
   <div id="app">
     <p>
+      Hello.<span v-bind:style="{ color: color, fontSize: fontSize + 'px'}">Vue.js!</span>
+    </p>
+    <p>
       Hello <span v-bind:class="[isLarge ? largeClass : '' , dangerClass]">Vue.js!</span>
     </p>
     Helle <span v-bind:class="classObject">Vue.js!</span></br>
