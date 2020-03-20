@@ -8,6 +8,7 @@
 </head>
 <body>
   <div id="app">
+    Hello <span v-bind:class="[dangerClass, largeClass]">Vuew.js!</span>
     <p>
       Hello <span class="bg-gray text-blue" v-bind:class="{large: isLarge, 'text-danger': hasError}">Vue.js!</span>
     </p>
