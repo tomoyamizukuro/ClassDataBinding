@@ -8,7 +8,11 @@
 </head>
 <body>
   <div id="app">
-    Hello <span v-bind:class="[dangerClass, largeClass]">Vuew.js!</span>
+    <p>
+      Hello <span v-bind:class="[isLarge ? largeClass : '' , dangerClass]">Vue.js!</span>
+    </p>
+    Helle <span v-bind:class="classObject">Vue.js!</span></br>
+    Hello <span v-bind:class="[dangerClass, largeClass]">Vue.js!</span>
     <p>
       Hello <span class="bg-gray text-blue" v-bind:class="{large: isLarge, 'text-danger': hasError}">Vue.js!</span>
     </p>
