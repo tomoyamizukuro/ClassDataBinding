@@ -1,6 +1,7 @@
 var app = new Vue({
   el: "#app",
   data: {
+    counter: 0,
     color: 'blue',
     toggle: true,
     styleObject: {
@@ -21,5 +22,11 @@ var app = new Vue({
     },
     isLarge: true,
     hasError: true
+  },
+  methods: {
+    clickHandler: function(){
+      this.counter++
+      console.log('clicked!')
+    }
   }
 })

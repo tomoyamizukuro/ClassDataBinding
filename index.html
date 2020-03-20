@@ -8,6 +8,15 @@
 </head>
 <body>
   <div id="app">
+    <p>
+      {{ counter }}
+    </p>
+    <button v-on:click="counter++">
+      Click1
+    </button>
+    <button v-on:click="clickHandler()">
+      Click2
+    </button>
     <p v-show="toggle">
       Hello Vue.js
     </p>
