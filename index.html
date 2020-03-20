@@ -8,7 +8,8 @@
 </head>
 <body>
   <div id="app">
-    <input type="text" v-on:keyup.esc.space.up="clear" v-model="message">
+    <!-- <input type="text" v-on:keyup.esc.space.up="clear" v-model="message"> -->
+    <input type="text" v-on:keyup.ctrl.67="clear" v-model="message">
     <p>
       {{ message }}
     </p>
