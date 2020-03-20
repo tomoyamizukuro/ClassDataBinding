@@ -24,6 +24,9 @@ var app = new Vue({
     hasError: true
   },
   methods: {
+    clear: function(){
+      this.message = ''
+    },
     // clickHandler: function($event,message){
     //   this.message = message
     //   console.log($event)
