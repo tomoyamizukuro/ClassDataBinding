@@ -8,6 +8,28 @@
 </head>
 <body>
   <div id="app">
+    <p v-show="toggle">
+      Hello Vue.js
+    </p>
+    <p v-if="color === 'red'">
+      Stop
+    </p>
+    <p v-else-if="color === 'yellow'">
+      Caution
+    </p>
+    <p v-else-if="color === 'blue'">
+      Go
+    </p>
+    <p v-else>
+      Not red/yellow/blue
+    </p>
+
+    <p v-if="toggle">
+      YES
+    </p>
+    <p v-else>
+      NO
+    </p>
     <p>
       Hello <span v-bind:style="styleObject">Vue.js</span>
     </p>

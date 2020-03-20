@@ -1,11 +1,12 @@
 var app = new Vue({
   el: "#app",
   data: {
+    color: 'blue',
+    toggle: true,
     styleObject: {
       color: 'blue',
       fontSize: '36px'
     },
-    color: 'blue',
     fontSize: 36,
     classObject: {
       large: true,
@@ -18,8 +19,6 @@ var app = new Vue({
     dangerClass: {
       'text-danger': true
     },
-    // largeClass: 'large',
-    // dangerClass: 'text-danger',
     isLarge: true,
     hasError: true
   }
