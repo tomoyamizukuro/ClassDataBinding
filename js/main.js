@@ -24,9 +24,12 @@ var app = new Vue({
     hasError: true
   },
   methods: {
-    clickHandler: function(){
+    clickHandler: function(event){
       this.counter++
-      console.log('clicked!')
+      console.log(event)
+      console.log(event.target.tagName)
+      console.log(event.target.innerHTML)
+      console.log(event.target.type)
     }
   }
 })
