@@ -27,6 +27,9 @@ var app = new Vue({
     clear: function(){
       this.message = ''
     },
+    clickHandler: function () {
+      alert('shift + click')
+    }
     // clickHandler: function($event,message){
     //   this.message = message
     //   console.log($event)
@@ -34,9 +37,9 @@ var app = new Vue({
     //   console.log($event.target.innerHTML)
     //   console.log($event.target.type)
     // },
-    clickHandler: function(){
-      this.message = new Date().toLocaleTimeString()
-    }
+    // clickHandler: function(){
+    //   this.message = new Date().toLocaleTimeString()
+    // }
 
   }
 })

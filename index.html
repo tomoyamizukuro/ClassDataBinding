@@ -9,7 +9,16 @@
 <body>
   <div id="app">
     <!-- <input type="text" v-on:keyup.esc.space.up="clear" v-model="message"> -->
-    <input type="text" v-on:keyup.ctrl.67="clear" v-model="message">
+    <button v-on:click="clickHandler">
+      Click!
+    </button>
+    <button @click="clickHandler">
+      Click! 2
+    </button>
+    <input type="text" @keyup.ctrl.67="clear" v-model="message">
+    <div @click.shift="clickHandler">
+      Click me!
+    </div>
     <p>
       {{ message }}
     </p>
